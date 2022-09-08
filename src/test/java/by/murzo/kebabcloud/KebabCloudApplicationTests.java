@@ -1,13 +1,13 @@
-package by.murzo.tacocloud;
+package by.murzo.kebabcloud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TacoCloudApplicationTests {
+class KebabCloudApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
