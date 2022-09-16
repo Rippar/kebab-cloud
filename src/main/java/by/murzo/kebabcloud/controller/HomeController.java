@@ -11,22 +11,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    IngredientRepository ingredientRepository;
-
-    @Autowired
-    public HomeController(IngredientRepository ingredientRepository) {
-        this.ingredientRepository = ingredientRepository;
-    }
 
     @GetMapping("/")
     public String home() {
         return "home";
-    }
-
-    @GetMapping("/getIngrediens")
-    public ResponseEntity<Iterable<Ingredient>> read() {
-        Iterable<Ingredient> ingredients = ingredientRepository.findAll();
-        return new ResponseEntity<>(ingredients, HttpStatus.OK);
     }
 
     @GetMapping("/login")

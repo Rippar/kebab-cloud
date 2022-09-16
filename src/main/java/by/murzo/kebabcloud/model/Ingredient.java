@@ -9,11 +9,11 @@ import org.springframework.data.relational.core.mapping.Table;
 public class Ingredient {
 
     @Id
-    private final String id;
+    private String id;
 
-    private final String name;
+    private String name;
 
-    private final Type type;
+    private Type type;
 
     public enum Type {
         WRAP, MEAT, VEGGIES, CHEESE, SAUCE

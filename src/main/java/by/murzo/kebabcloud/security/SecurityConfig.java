@@ -51,6 +51,8 @@ public class SecurityConfig {
                 .and()
                 .logout()
                 .and()
+                .csrf()
+                .disable()
                 .build();
     }
 
